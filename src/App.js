@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import Buttons from './buttons/button'
+import Buttons from './buttons/button';
+import Display from './display/display';
 
+const buttonData = require('./buttons/buttons.json');
 const Esc = 'Esc';
 const CE = 'CE';
 const Add = '+';
@@ -16,7 +18,18 @@ export default class App extends Component{
     this.state={
         ans:'0',
     }
-    this.onButtonClick = this.onButtonClick.bind(this)
+    this.onButtonClick = this.onButtonClick.bind(this);
+    this.buttonPress = this.buttonPress.bind(this);
+  }
+  componentDidMount(){
+    document.addEventListener('keydown',this.buttonPress)
+  }
+  buttonPress(event){
+    for(let i=0;i<buttonData.length;i++){
+        if(buttonData[i].keyCode===event.keyCode){
+            this.onButtonClick(buttonData[i].value);
+        }
+    }
   }
   onButtonClick(value){
     let prevText = this.state.ans
@@ -61,9 +74,7 @@ export default class App extends Component{
     const {ans} = this.state;
     return (
       <div id="calculator" className="container">
-        <div className="row ans-container">
-        <div className="col-12 cal-ans">{ans}</div>
-        </div>
+        <Display value={ans} />
         <Buttons buttonClick={this.onButtonClick}/>
       </div>
     );

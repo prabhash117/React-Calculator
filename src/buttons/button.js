@@ -34,60 +34,6 @@ export default class Buttons extends Component{
         return(
             <div className="row button-container">
                 {button}
-                {/* <div className="col-6 button-box">
-                    <div className="cal-button cal-button-opretor">Esc</div>
-                </div>
-                <div className="col-6 button-box">
-                    <div className="cal-button cal-button-opretor">AC</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button">7</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button button-box">8</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button">9</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button cal-button-opretor">&#247;</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button">4</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button button-box">5</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button">6</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button cal-button-opretor">&#215;</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button">1</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button button-box">2</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button">3</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button cal-button-opretor">-</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button">0</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button button-box">.</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button cal-button-equal">=</div>
-                </div>
-                <div className="col-3 button-box">
-                    <div className="cal-button cal-button-opretor">+</div>
-                </div>*/}
             </div> 
         )
     }
