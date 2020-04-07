@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#calculator{
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+.cal-container{
+    width: inherit;
+}
+.ans-container{
+    padding: 10px 10px 0;
+}
+.cal-ans{
+    background: #f7f7f7;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 15px;
+    color: #222;
+    text-align: right;
+    font-weight: 500;
+    border: 1px solid #dfe1e5;
+    border-radius: 3px;
+}
+.button-container{
+    padding: 5px;
+}
+.cal-button{
+    background: #F1F3F4;
+    color: #222;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 3px;
+}
+.cal-button-opretor{
+    background: #D7D9DD;
+}
+.cal-button-equal{
+    background: #4D8BF1;
+    color: #fff;
+}
+.button-container [class*="col-"] {
+    padding:5px;
+}
+
+@media (max-width: 575.98px) {
+    #calculator{
+        width: 100% !important;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,21 @@
+[
+    {"id":"1", "type":"opretor","value":"Esc"},
+    {"id":"2", "type":"opretor", "value":"CE"},
+    {"id":"3", "type":"number", "value":"7"},
+    {"id":"4", "type":"number", "value":"8"},
+    {"id":"5", "type":"number", "value":"9"},
+    {"id":"6", "type":"opretor", "value":"/"},
+    {"id":"7", "type":"number", "value":"4"},
+    {"id":"8", "type":"number", "value":"5"},
+    {"id":"9", "type":"number", "value":"6"},
+    {"id":"10", "type":"opretor", "value":"*"},
+    {"id":"11", "type":"number", "value":"1"},
+    {"id":"12", "type":"number", "value":"2"},
+    {"id":"13", "type":"number", "value":"3"},
+    {"id":"14", "type":"opretor", "value":"-"},
+    {"id":"15", "type":"number", "value":"0"},
+    {"id":"16", "type":"number", "value":"."},
+    {"id":"17", "type":"opretor", "value":"="},
+    {"id":"18", "type":"opretor", "value":"+"}
+]
+
