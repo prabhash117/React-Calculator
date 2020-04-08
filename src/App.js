@@ -55,9 +55,14 @@ export default class App extends Component{
       })
       }
     }else if(value===equl){
-      this.setState({
+      const lastOpretor = prevText.charAt(prevText.length-1);
+      if(lastOpretor===Divi || lastOpretor===Sub || lastOpretor===Add || lastOpretor===mult){
+        return false;
+      }else{
+        this.setState({
           ans:eval(prevText).toString(),
-      })
+        })
+      }
     }else if(value===point){
       if(prevText.lastIndexOf('.')=== -1){
         this.setState({
