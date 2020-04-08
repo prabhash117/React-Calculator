@@ -17,7 +17,7 @@ body {
     width: inherit;
 }
 .ans-container{
-    padding: 10px 10px 0;
+    padding: 16px 16px 0;
 }
 .cal-ans{
     background: #f7f7f7;
@@ -30,9 +30,10 @@ body {
     border: 1px solid #dfe1e5;
     border-radius: 3px;
     word-break: break-word;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
 .button-container{
-    padding: 5px;
+    padding: 5px 11px 11px 11px;
 }
 .cal-button{
     background: #F1F3F4;
@@ -43,13 +44,39 @@ body {
     cursor: pointer;
     font-weight: 400;
     border-radius: 3px;
+    border: 1px solid #F1F3F4;
+}
+.cal-button:hover {
+    background: #e8eaeb;
+    border-color: #e8eaeb;
+}
+.cal-button:active{
+    border: 1px solid #bdc1c6;
 }
 .cal-button-opretor{
-    background: #D7D9DD;
+    background: #dfe1e5;
+    border: 1px solid #dfe1e5;
+}
+.cal-button-opretor:hover{
+    background: #d7d9dd;
+    border-color: #d7d9dd;
+}
+.cal-button-opretor:active{
+    border: 1px solid #9aa0a6;
 }
 .cal-button-equal{
     background: #4D8BF1;
     color: #fff;
+    border: 1px solid #4285f4;
+}
+.cal-button-equal:hover{
+    background: rgb(67, 131, 235);
+    border-color:#4285f4;
+}
+.cal-button-equal:active {
+    background: #4d8bf1;
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,.45), 0 3px 6px 2px rgba(66,133,244,.30);
+    border: 1px solid #4285f4;
 }
 .button-container [class*="col-"] {
     padding:5px;
